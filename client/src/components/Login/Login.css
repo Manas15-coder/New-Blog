@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#login {
+    background-image: linear-gradient(45deg,
+            rgba(0, 0, 0, 0.268),
+            rgba(7, 7, 7, 0.477)), url('https://images.pexels.com/photos/270640/pexels-photo-270640.jpeg?cs=srgb&dl=pexels-pixabay-270640.jpg&fm=jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+}
+
+.login-wrapper {
+    padding: 40px 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@media only screen and (min-width:769px) {
+    .login-wrapper {
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (max-width:769px) {
+    .login-wrapper {
+        margin-top: 30%;
+    }
+}
+
+.login-wrapper h2 {
+    color: #fbfbfb;
+    font-weight: bold;
+}
+
+form input {
+    padding: 20px 10px;
+    border: none;
+    border-radius: 25px;
+    height: 50px;
+}
+
+.form {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-btn {
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 5px;
+    background-color: #016b6c;
+    border: none;
+    border-radius: 10px;
+    color: #ffff;
+    max-width: 300px;
+    width: 100%;
+}
+
+.register {
+    cursor: pointer;
+    font-weight: 500;
+    border: none;
+    background-color: transparent;
+}

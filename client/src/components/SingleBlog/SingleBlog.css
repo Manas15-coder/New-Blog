@@ -1,0 +1,70 @@
+#single-blog{
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: rgba(100, 100, 111, 0.04) 0px 7px 29px 0px;
+}
+@media only screen and (min-width:769px){
+    #single-blog{
+        margin-top: 5%;
+        width: 70%;
+    }
+
+}
+@media only screen and (max-width:769px){
+    #single-blog{
+        margin-top: 20%;
+        width: 90%;
+    }
+}
+#single-blog h1{
+    font-weight: bold;
+}
+.desc::first-letter{
+    font-weight: bold;
+    font-size: 2rem;
+}
+p{
+    font-size: 1.2rem;
+}
+.edit{
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 5px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.delete{
+    background-color: transparent;
+    border: none;
+}
+
+.delete-dialog{
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #cccc;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px 20px;
+    z-index: 1;
+}
+.delete-dialog-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.cancel{
+    background-color: green;
+    color:#ffff;
+    border-radius: 10px;
+    border: none;
+    padding: 5px 10px;
+}

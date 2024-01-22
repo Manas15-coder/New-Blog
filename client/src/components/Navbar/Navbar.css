@@ -1,0 +1,111 @@
+#navbar {
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    background-color: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.nav {
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left,
+.mid,
+.right {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    gap: 5px;
+}
+
+.mid-btn {
+    padding: 2px 5px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 0.3s ease-in-out;
+}
+
+.mid-btn:hover {
+    transform: scale(1.1);
+}
+
+.signin {
+    border-radius: 10px;
+    padding: 5px 5px;
+    border: none;
+    background-color: orange;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.dropdown-content {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px 20px;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 769px) {
+    .dropdown-content {
+        top: 15%;
+        right: 0%;
+        left: auto;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .dropdown-content {
+        top: 15%;
+        right: 0%;
+        left: auto;
+    }
+}
+
+.profile {
+    padding: 5px 10px;
+    border-radius: 50%;
+    background-color: black;
+    color: #ffffff;
+}
+
+.profile:hover {
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px 10px;
+    background-color: #cccccc;
+    color: black;
+}
+
+.dropdown-btn {
+    border: none;
+    background-color: transparent;
+    transition: 0.5s ease-in-out;
+    width: 100%;
+}
+
+.dropdown-btn:hover {
+    font-weight: bold;
+}
+
+i {
+    font-size: 20px;
+}
